@@ -29,7 +29,7 @@ function moveElement(evt, callback) {
     window.oncontextmenu = null;
     targetStyle.left = (finalX / parent.offsetWidth) * 100 + "%";
     targetStyle.top = (finalY / parent.offsetHeight) * 100 + "%";
-    callback({element: target, x: targetStyle.left, y: targetStyle.top});
+    callback({element: target, x: targetStyle.left, y: targetStyle.top, sizeX: targetStyle.width, sizeY: targetStyle.height});
   }
 
   //moves the element to the mouse position, in case the element leaves the section it sends it to the center

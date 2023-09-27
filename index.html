@@ -7,12 +7,21 @@
   <title>salon-eventos</title>
   <link rel="stylesheet" href="style.css">
   <script type="module" src="move-element.js"></script>
+  <script type="module" src="dad.js"></script>
+  <script src="form.js"></script>
 </head>
 
 <body>
   <div class="container">
-    <div class="table"></div>
+    <div class="table" id="target"></div>
   </div>
+  <form id="sizeForm">
+    <label for="sizeX">ancho</label>
+    <input type="number" min="1" max="100" id="sizeX">
+    <label for="sizeY">largo</label>
+    <input type="number" min="1" max="100" id="sizeY">
+    <input type="submit" value="subir">
+  </form>
 </body>
 
 </html>
